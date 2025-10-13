@@ -256,7 +256,7 @@ header{
 	flex-direction: column;
 	align-items: center;
 	gap: 10px;	
-  	background-image: url(../img/Rectangle.png);
+  	background-image: url(../site/img/Rectangle.png);
   	background-size: cover;
   	background-repeat: no-repeat;
   	background-position: top;
@@ -749,7 +749,7 @@ header{
   	color: #ff6d6d;
 }
 .bg-mask{
-		background-image: url(../img/Mask\ group.png);
+		background-image: url(../site/img/Mask\ group.png);
   	background-repeat: no-repeat;
   	background-position: top;
 	transform: rotate(180deg);
@@ -1063,7 +1063,7 @@ footer{
 	align-items: center;
 	justify-content: space-around;
 	width: 100%;
-	background-image: url(../img/rectangle-2.png);
+	background-image: url(../site/img/rectangle-2.png);
 	height: 200px;
 	background-position: center;
 	background-size: cover;
@@ -1094,7 +1094,7 @@ font-size: 30px;
 .bg-item{
 	mix-blend-mode: color-dodge;
 	background-size: cover;
-	background-image: url(../img/Picture-card-1.png);
+	background-image: url(../site/img/Picture-card-1.png);
 	width: 100%;
 	position: absolute;
 	bottom: 0px;
@@ -1104,7 +1104,7 @@ font-size: 30px;
 .bg-item-2{
 	mix-blend-mode: color-dodge;
 	background-size: cover;
-	background-image: url(../img/Picture-card-2.png);
+	background-image: url(../site/img/Picture-card-2.png);
 	width: 100%;
 	position: absolute;
 	bottom: 0px;
@@ -1220,7 +1220,7 @@ align-items: center;
 	font-size: 35px;
 }
 .vector-1{
-	background-image: url(../img/angle-right.png);
+	background-image: url(../site/img/angle-right.png);
 	width: 200px;
 	object-fit: contain;
 	height: 250px;
@@ -1229,7 +1229,7 @@ align-items: center;
 	
 }
 .vector-2{
-background-image: url(../img/agle-left.png);
+background-image: url(../site/img/agle-left.png);
 	width: 200px;
 	object-fit: contain;
 	height: 250px;
