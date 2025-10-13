@@ -256,7 +256,7 @@ header{
 	flex-direction: column;
 	align-items: center;
 	gap: 10px;	
-  	background-image: url(../site/img/Rectangle.png);
+  	background-image: url(../img/Rectangle.png);
   	background-size: cover;
   	background-repeat: no-repeat;
   	background-position: top;
@@ -749,7 +749,6 @@ header{
   	color: #ff6d6d;
 }
 .bg-mask{
-		background-image: url(../site/img/Mask\ group.png);
   	background-repeat: no-repeat;
   	background-position: top;
 	transform: rotate(180deg);
@@ -957,7 +956,7 @@ header{
   	z-index: 2;
 }
 .block-4-wrapper {
-	height: 900px;
+	height: 100vh;
   	width: 1920px;
     background: radial-gradient(#411F1F, #2B1414);
   	display: flex;
@@ -1063,7 +1062,7 @@ footer{
 	align-items: center;
 	justify-content: space-around;
 	width: 100%;
-	background-image: url(../site/img/rectangle-2.png);
+	background-image: url(../img/rectangle-2.png);
 	height: 200px;
 	background-position: center;
 	background-size: cover;
@@ -1220,7 +1219,7 @@ align-items: center;
 	font-size: 35px;
 }
 .vector-1{
-	background-image: url(../site/img/angle-right.png);
+	background-image: url(../img/angle-right.png);
 	width: 200px;
 	object-fit: contain;
 	height: 250px;
@@ -1229,7 +1228,7 @@ align-items: center;
 	
 }
 .vector-2{
-background-image: url(../site/img/agle-left.png);
+background-image: url(../img/agle-left.png);
 	width: 200px;
 	object-fit: contain;
 	height: 250px;
