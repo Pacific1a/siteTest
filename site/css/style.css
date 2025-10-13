@@ -606,7 +606,7 @@ header{
   	left: -1px;
   	box-shadow: 0px 0px 119.3px rgba(128, 18, 18, 0.33);
   	border-radius: 24px;
-  	background: linear-gradient(180deg, #bc1515, #451111);
+  	background: linear-gradient(180deg, #9a1414, #451111);
   	border: 2px solid #ff1919;
   	box-sizing: border-box;
   	width: 358.6px;
@@ -635,7 +635,7 @@ header{
   	top: 31.4px;
   	left: 27.86px;
   	border-radius: 13px;
-  	background: linear-gradient(-45deg, #ac1010, #d91e1e);
+	  background: linear-gradient(-45deg, #5b0909, #5b0909);
   	height: 50px;
 }
 .div14 {
@@ -674,7 +674,7 @@ header{
   	left: 255.29px;
   	box-shadow: 11px 22px 22px rgba(0, 0, 0, 0.11), 0px 0px 119.3px rgba(128, 18, 18, 0.33);
   	border-radius: 24px;
-  	background: linear-gradient(180deg, #bc1515, #451111);
+  	background: linear-gradient(180deg, #9a1414, #451111);
   	border: 2px solid #ff1919;
   	box-sizing: border-box;
   	width: 358.6px;
@@ -694,7 +694,7 @@ header{
   	left: 29.71px;
   	font-size: 18px;
   	line-height: 22px;
-  	color: #ac1d1d;
+  	color: #bd0000;
   	display: flex;
   	align-items: center;
   	height: 37.3px;
@@ -708,7 +708,7 @@ header{
   	left: 552.43px;
   	box-shadow: 11px 22px 22px rgba(0, 0, 0, 0.11), 0px 0px 119.3px rgba(128, 18, 18, 0.33);
   	border-radius: 24px;
-  	background: linear-gradient(180deg, #bc1515, #451111);
+  	background: linear-gradient(180deg, #9a1414, #451111);
   	border: 2px solid #ff1919;
   	box-sizing: border-box;
   	width: 358.6px;
