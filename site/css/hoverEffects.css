@@ -1,0 +1,161 @@
+.site-wrapper::before{
+    content: "";
+    position: absolute;
+    background: linear-gradient(270deg, #ff0000, #bd0000);
+    width: 100%;
+    height: 100%;
+    border-radius: 22px;
+    transform: translateX(-110px);
+    transition: 0.5s ease-in;
+}
+.site-wrapper:hover{
+    color: black;
+    transition: 0.5s ease-in;
+    width: 110px;
+    height: 45px;
+
+}
+.site-wrapper:hover::before{
+    transform: translateX(0px);
+}
+
+.frame::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(217, 217, 217, 0.1);
+    width: 100%;
+    height: 100%;
+    border-radius: 22px;
+    transform: translateX(160px);
+    transition: 0.5s ease-in;
+}
+.frame:hover{
+    transition: 0.5s ease-in;
+    background: linear-gradient(270deg, #ff000000, #bd000000);
+    color: rgb(255, 255, 255);
+    width: 154px;
+    height: 45px;
+
+}
+.site-div:hover{
+    color: white;
+}
+.frame:hover::before{
+    transform: translateX(0px);
+}
+/* Добавляем перспективу для родительского контейнера */
+.design-parent {
+    perspective: 1500px;
+}
+
+/* Базовые стили для карточек с transition */
+.design, .performance, .payments {
+    transform-style: preserve-3d;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    cursor: pointer;
+}
+
+/* Эффект при наведении - карточка выдвигается вперед с 3D эффектом */
+.design:hover {
+    z-index: 10;
+    transform: translateY(-30px) translateZ(80px) rotateX(5deg) scale(1.15);
+    box-shadow: 
+        0px 40px 90px rgba(255, 40, 40, 0.6),
+        0px 0px 200px rgba(255, 0, 0, 0.4),
+        inset 0px 0px 30px rgba(255, 100, 100, 0.2);
+}
+
+.performance:hover {
+    z-index: 10;
+    transform: translateY(-30px) translateZ(80px) rotateX(5deg) scale(1.15);
+    box-shadow: 
+        0px 40px 90px rgba(255, 40, 40, 0.6),
+        0px 0px 200px rgba(255, 0, 0, 0.4),
+        inset 0px 0px 30px rgba(255, 100, 100, 0.2);
+}
+
+.payments:hover {
+    z-index: 10;
+    transform: translateY(-30px) translateZ(80px) rotateX(5deg) scale(1.15);
+    box-shadow: 
+        0px 40px 90px rgba(255, 40, 40, 0.6),
+        0px 0px 200px rgba(255, 0, 0, 0.4),
+        inset 0px 0px 30px rgba(255, 100, 100, 0.2);
+}
+
+/* Эффект свечения границы при hover */
+.design:hover, .performance:hover, .payments:hover {
+    border-color: #ff4040;
+}
+
+/* Анимация для иконок внутри карточек */
+.design:hover .design-child,
+.performance:hover .design-child,
+.payments:hover .design-child {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0px 0px 25px rgba(106, 7, 7, 0.8);
+    transition: all 0.4s ease;
+}
+
+/* Легкое затемнение остальных карточек при hover */
+.design-parent:has(.design:hover) .performance,
+.design-parent:has(.design:hover) .payments,
+.design-parent:has(.performance:hover) .design,
+.design-parent:has(.performance:hover) .payments,
+.design-parent:has(.payments:hover) .design,
+.design-parent:has(.payments:hover) .performance {
+    filter: brightness(0.7) blur(2px);
+    transform: scale(0.9);
+}
+.text-wrapper-5:hover{
+    border-radius: 50px;
+    transform: translateY(-5px)  scale(1.15); 
+    box-shadow: 0px 0px 30px rgba(255, 0, 0, 0.357);
+}
+
+/* Отключаем hover эффекты карточек на мобильных устройствах */
+@media (max-width: 768px) {
+    .design, .performance, .payments {
+        transition: none !important;
+        transform: none !important;
+        pointer-events: auto !important;
+    }
+
+    .design:hover,
+    .design:active,
+    .performance:hover,
+    .performance:active,
+    .payments:hover,
+    .payments:active {
+        z-index: auto !important;
+        transform: none !important;
+        border-color: inherit !important;
+        box-shadow: none !important;
+    }
+
+    .design:hover .design-child,
+    .design:active .design-child,
+    .performance:hover .design-child,
+    .performance:active .design-child,
+    .payments:hover .design-child,
+    .payments:active .design-child {
+        transform: none !important;
+        box-shadow: none !important;
+    }
+
+    .design-parent:has(.design:hover) .performance,
+    .design-parent:has(.design:hover) .payments,
+    .design-parent:has(.design:active) .performance,
+    .design-parent:has(.design:active) .payments,
+    .design-parent:has(.performance:hover) .design,
+    .design-parent:has(.performance:hover) .payments,
+    .design-parent:has(.performance:active) .design,
+    .design-parent:has(.performance:active) .payments,
+    .design-parent:has(.payments:hover) .design,
+    .design-parent:has(.payments:hover) .performance,
+    .design-parent:has(.payments:active) .design,
+    .design-parent:has(.payments:active) .performance {
+        filter: none !important;
+        transform: none !important;
+    }
+}
