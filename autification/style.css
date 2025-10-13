@@ -30,11 +30,12 @@
 
 .auntification .overlap {
   gap: 20px;
-  display: flex;
-  height: 92vh;
+  display: flex
+;
+  height: 82vh;
   position: relative;
   align-content: center;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   flex-direction: column;
 }
@@ -64,30 +65,33 @@
 }
 
 .auntification .overlap-group {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
-  width: 450px;
-
-  height: 635px;
- background-color: #221818;
-  position: relative;
-  border-radius: 20px;
- 
-
+  display: flex
+  ;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+      width: 442px;
+      height: 607.19px;
+      background-color: #221818;
+      position: relative;
+      border-radius: 20px;
+  
 }
 .res___reg {
 display: flex;
 flex-direction: column;
 align-items: center;
 gap: 30px;
+top: -10px;
+position: relative;
+
 }
 .auntification .text-wrapper {
   height: 26px;
   font-family: "NexaText-Regular", Helvetica;
   color: #d0adad;
   font-size: 20px;
+  margin-top: 16px;
   font-weight: 400;
   letter-spacing: 0;
   line-height: 26px;
@@ -247,6 +251,7 @@ input[type="checkbox"] {
   transition: 0.3s ease;
 }
 .auntification .accept-rules {
+  margin-top: 22px;
   width: 380px;
 }
 input[type="checkbox"]:checked::after {
