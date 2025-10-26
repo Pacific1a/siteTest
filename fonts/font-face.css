@@ -1,0 +1,20 @@
+:root{
+  --NexaRegular: "NexaRegular";
+  --NexaHeavy: "NexaHeavy";
+  --NexaBook: "NexaBook";
+}
+@font-face {
+      font-family: "NexaRegular";
+      src: url("NexaTextRegular.otf")
+        format("opentype");   
+    }
+@font-face {
+      font-family: "NexaHeavy";
+      src: url("Nexa-Heavy.ttf")
+        format("opentype");
+    }
+@font-face {
+      font-family: "NexaBook";
+      src: url("NexaTextBook.otf")
+        format("opentype");
+    }

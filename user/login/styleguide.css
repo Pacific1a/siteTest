@@ -1,0 +1,22 @@
+:root {
+    --dmptgwhite-40: rgba(255, 255, 255, 0.4);
+    --dmptgwhite-60: rgba(255, 255, 255, 0.6);
+    --dmp-tg-geologica-bold-font-family: "Geologica", Helvetica;
+    --dmp-tg-geologica-bold-font-weight: 700;
+    --dmp-tg-geologica-bold-font-size: 74.69999694824219px;
+    --dmp-tg-geologica-bold-letter-spacing: 0px;
+    --dmp-tg-geologica-bold-line-height: normal;
+    --dmp-tg-geologica-bold-font-style: normal;
+    --dmp-tg-geologica-extralight-font-family: "Geologica", Helvetica;
+    --dmp-tg-geologica-extralight-font-weight: 200;
+    --dmp-tg-geologica-extralight-font-size: 14px;
+    --dmp-tg-geologica-extralight-letter-spacing: 0px;
+    --dmp-tg-geologica-extralight-line-height: normal;
+    --dmp-tg-geologica-extralight-font-style: normal;
+    --dmp-tg-geologica-light-font-family: "Geologica", Helvetica;
+    --dmp-tg-geologica-light-font-weight: 300;
+    --dmp-tg-geologica-light-font-size: 48px;
+    --dmp-tg-geologica-light-letter-spacing: 0px;
+    --dmp-tg-geologica-light-line-height: normal;
+    --dmp-tg-geologica-light-font-style: normal;
+}

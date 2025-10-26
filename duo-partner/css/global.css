@@ -1,0 +1,11 @@
+html, body {
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overflow-y: scroll;
+  margin: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}

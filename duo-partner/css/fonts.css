@@ -1,0 +1,30 @@
+.logo span{
+    font-family: var(--NexaHeavy);
+    font-weight: 900;
+}
+
+body,
+button, 
+aside 
+.menu-item,
+.title_bot,
+.auth_ctn,
+.ac_cnt,
+.avatar_block,
+.auth_info span,
+.sts_nav,
+.code,
+.dashboard.mobile-menu
+{
+    font-family: var(--NexaRegular);
+}
+
+.token_bot,
+.date_select,
+.log_type span,
+input::placeholder,
+.lead_code span
+.dashboard.mobile-menu
+{
+    font-family: var(--NexaBook);
+}

@@ -1,0 +1,30 @@
+/* Скрываем модалки успеха/ошибки по умолчанию */
+.btn_condition {
+    display: none !important;
+}
+
+.btn_condition .succes,
+.btn_condition .error {
+    display: none !important;
+}
+
+/* Стили для видимых модалок */
+.btn_condition.active {
+    display: flex !important;
+}
+
+.btn_condition.active .succes,
+.btn_condition.active .error {
+    display: flex !important;
+}
+
+
+/* Показываем нужную кнопку только на десктопе */
+@media (min-width: 1025px) {
+   
+}
+
+/* На планшетах и мобильных всегда скрываем */
+@media (max-width: 1024px) {
+
+}

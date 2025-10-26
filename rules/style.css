@@ -1,0 +1,109 @@
+body{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        background: url(fix.png) center #1F1919;
+        font-family: var(--NexaBook);
+    }
+    .color{
+         background-color: rgba(37, 25, 25, 0.589);
+         top: 0;
+         height: 100vh;
+         width: 100%;
+         position: fixed
+
+        }
+    .title{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+    .info span{
+        font-family: var(--NexaHeavy);
+        color: #FF0000;
+        font-size: 26px;
+    }
+    .info{
+        position: absolute;
+        top: 0;
+        margin-top: 70px;
+        margin-bottom: 20px;
+        background: linear-gradient(#311d1dce, #2f1818ce);
+        backdrop-filter: blur(3px);
+        width: 770px;
+        height: 60px;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
+    }
+    .rules-info{
+        margin-bottom: 100px;
+        top: 170px;
+        position: absolute;
+        background: linear-gradient(#2D2222, #2A1F1F);
+        border-radius: 30px;
+        padding: 40px 40px;
+        width: 850px;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+    }
+    .top{
+        margin-top: 50px;
+    }
+    .rules-title{
+        background-color: #1F1919;
+        color: white;
+        padding: 26px 26px;
+        font-size: 30px;
+        border-radius: 30px;
+        width: 770px;
+    }
+    ol li{
+        color: white;
+        font-size: 24px;
+    }
+    ol{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .fot{
+         background-color: #1F1919;
+        color: white;
+        padding: 26px 26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        line-height: 15px;
+        border-radius: 30px;
+        width: 770px;
+        margin-bottom: 50px;
+    }
+    .fot span{
+        color: #534141;
+    }
+    .backPanel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+        background-color: #E63737;
+        padding: 10px 25px;
+        font-size: 30px;
+        border-radius: 30px;
+        
+        border: none;
+
+    }

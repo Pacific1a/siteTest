@@ -1,0 +1,56 @@
+@media (max-width: 1024px) {
+    .btn-2fa-add span{
+        display: none;
+    }
+    .btn-2fa-add {
+        min-width: 0px;
+    }
+    .stats-cards{
+        flex-direction: column;
+        gap: 20px;
+
+    }
+    .header-buttons{
+        gap: 10px;
+    }
+}
+@media (max-width: 768px) {
+    .support{
+        bottom: 90px;
+    }
+    .connection_sub span{
+        font-size: 18px;
+    }
+    .btn-2fa-add{
+        display: none;
+    }
+    .logo, .sidebar{
+        display: none;
+    }
+    .menu-mobile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        width: 100%;
+        bottom: 0px;
+        background-color: #1B1212;
+        height: 73px;
+    }
+  
+}
+
+ @media (max-width: 480px) {
+    .dashboard{
+        padding: 10px;
+    }
+    .dashboard.mobile-menu{
+        padding: 30px!important;
+    }
+    .balance{
+        width: 185px;
+}
+.date-picker span, .panel-title span {
+    font-size: 13px;
+}
+}

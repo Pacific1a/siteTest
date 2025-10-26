@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="globals.css" />
+        <link rel="stylesheet" href="styleguide.css" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="../../fonts/font-face.css">
+        <link rel="stylesheet" href="../../css/notifications.css">
+        <script src="../../js/notifications.js"></script>
+        <script src="../../js/api.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="auntification">
+            <div class="overlap-wrapper">
+                <div class="overlap">
+                    <div class="duo-partners">DUO PARTNERS</div>
+                    <div class="sign-in">
+                        <!-- Форма 1: Запрос email -->
+                        <div class="overlap-group" id="email-form">
+                            <div class="group">
+                                <div class="text-wrapper">Восстановление пароля</div>
+                                <input class="email" id="reset-email" placeholder="Введите Email или логин" type="text" />
+                                <a href="#" class="login-button" id="send-reset"><div class="text-wrapper-2">ВОССТАНОВИТЬ</div></a>
+                                <div class="res___reg">
+                                    <p class="res__info">На указанную почту будет отправлено <br> письмо для восстановления.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Форма 2: Ввод нового пароля -->
+                        <div class="overlap-group" id="password-form" style="display: none;">
+                            <div class="group">
+                                <div class="text-wrapper">Смена пароля</div>
+                                <input class="password" id="new-password" placeholder="Введите новый пароль" type="password" />
+                                <input class="password" id="confirm-password" placeholder="Повторите новый пароль" type="password" />
+                                <a href="#" class="login-button" id="reset-password-btn"><div class="text-wrapper-2">ИЗМЕНИТЬ ПАРОЛЬ</div></a>
+                                <div class="res___reg">
+                                    <p class="res__info">Введите токен: <span id="token-display" style="color: #ff0000; font-weight: bold;"></span></p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Форма 3: Подтверждение -->
+                        <div class="overlap-group" id="success-form" style="height: 280px!important; margin-top: 50px; display: none;">
+                            <div class="group">
+                                <div class="text-wrapper">Пароль изменён</div>
+                                <div class="over-text">
+                                    <p>Ваш пароль был успешно изменён. <br> Теперь вы можете войти с <br> новым паролем.</p>
+                                </div>
+                                <div class="res___reg">
+                                    <a href="../login/index.html" class="login-button"><div class="text-wrapper-2">ВОЙТИ</div></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

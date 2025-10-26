@@ -1,0 +1,53 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    font-family: var(--NexaRegular);
+}
+html,
+body {
+   background: radial-gradient(50% 50% at 50% 50%, rgba(96, 22, 22, 1) 0%, rgba(26, 18, 18, 1) 100%);
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+    outline: 2px solid #4a90e2 !important;
+    outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+    text-decoration: none;
+}
+
+@font-face {
+  font-family: "Nexa-Heavy";
+  src: url("https://anima-uploads.s3.amazonaws.com/5c4feaf636c3b1000b0f3d43/Fontfabric - Nexa-Heavy.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "NexaText-Regular";
+  src: url("https://anima-uploads.s3.amazonaws.com/projects/625d333ab028d4a2341809dc/fonts/nexatextregular.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: "NexaText-Thin";
+  src: url("../Шрифты/NexaTextBook.otf")
+    format("opentype");
+}
+
+@media (max-height: 1024px) {
+  body {
+    overflow: scroll;
+    scrollbar-color: transparent transparent;
+    scrollbar-width: none;
+  } 
+  .auntification .overlap{
+    height: 100%;
+  }
+}

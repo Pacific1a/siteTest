@@ -1,0 +1,104 @@
+.notification-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+}
+
+.notification {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 16px 24px;
+    background: linear-gradient(135deg, rgba(96, 65, 65, 0.95) 0%, rgba(108, 79, 79, 0.95) 100%);
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    transform: translateX(400px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    min-width: 300px;
+    position: relative;
+}
+
+.notification-show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.notification-hide {
+    opacity: 0;
+    transform: translateX(400px) scale(0.9);
+}
+
+.notification-icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notification-message {
+    flex: 1;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: var(--NexaRegular, 'Arial', sans-serif);
+}
+
+
+
+.notification-success {
+    background: linear-gradient(135deg, rgba(76, 175, 80, 0.95) 0%, rgba(56, 142, 60, 0.95) 100%);
+    border-color: rgba(76, 175, 80, 0.3);
+}
+
+.notification-success .notification-icon {
+    color: #c8e6c9;
+}
+
+.notification-error {
+    background: linear-gradient(135deg, rgba(244, 67, 54, 0.7) 0%, rgba(211, 47, 47, 0.642) 100%);
+    border-color: rgba(244, 67, 54, 0.3);
+}
+
+.notification-error .notification-icon {
+    color: #ffcdd2;
+}
+
+.notification-warning {
+    background: linear-gradient(135deg, rgba(255, 152, 0, 0.95) 0%, rgba(245, 124, 0, 0.95) 100%);
+    border-color: rgba(255, 152, 0, 0.3);
+}
+
+.notification-warning .notification-icon {
+    color: #ffe0b2;
+}
+
+.notification-info {
+    background: linear-gradient(135deg, rgba(33, 150, 243, 0.95) 0%, rgba(25, 118, 210, 0.95) 100%);
+    border-color: rgba(33, 150, 243, 0.3);
+}
+
+.notification-info .notification-icon {
+    color: #bbdefb;
+}
+
+@media (max-width: 768px) {
+    .notification-container {
+        left: 20px;
+        right: 20px;
+        max-width: none;
+    }
+    
+    .notification {
+        min-width: auto;
+    }
+}

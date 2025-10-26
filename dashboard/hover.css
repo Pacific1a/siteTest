@@ -1,0 +1,29 @@
+.exit:hover {
+    opacity: 0.7 !important;
+}
+.manual_content:hover,
+.creative_content:hover {
+    opacity: 0.8;
+}
+.content_button button:hover {
+    background-color: #8F7070;
+}
+.btn_create_bot button:hover {
+    background-color: #8F7070;
+}
+.btn:hover {
+    opacity: 0.9;
+}
+.menu-item:hover {
+    opacity: 0.8;
+}
+.date_select > div:hover {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Скрываем кнопку 2FA на планшетах и мобильных */
+@media (max-width: 1024px) {
+    .profile button {
+        display: none !important;
+    }
+}
